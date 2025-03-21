@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="Digital_clock.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="timer">
+      <ul>
+        <li id="hour">00</li>
+        <li>:</li>
+        <li id="min">00</li>
+        <li>:</li>
+        <li id="sec">00</li>
+      </ul>
+    </div>
+    <div class="timer-identifier">
+      <ul>
+        <li>HOUR</li>
+        <li>MIN</li>
+        <li>SEC</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script>
+    let hour = document.getElementById("hour");
+    let min = document.getElementById("min");
+    let sec = document.getElementById("sec");
+
+    setInterval(() => {
+      let currentTime = new Date();
+      hour.innerHTML = currentTime.getHours();
+      min.innerHTML = currentTime.getMinutes();
+      sec.innerHTML = currentTime.getSeconds();
+    }, 1000)
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Document</title>
+  <link rel="stylesheet" href="Calculator.css">
+</head>
+
+<body>
+  <div class="Container">
+    <div class="ans">
+      <input type="text" id="inputbox" placeholder="0" name="display">
+    </div>
+    <div class="numeric">
+      <div class="inner">
+        <button class="operator" value="AC" onclick="display.value=' '">AC</button>
+        <button class="operator" value="DE" onclick="display.value.toString().slice(0,-1)">DEL</button>
+        <button class="operator">.</button>
+        <button class="operator">/</button>
+      </div>
+      <div class="inner">
+        <button value="7" onclick="ans.value='7'">7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator">*</button>
+      </div>
+      <div class="inner">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator">-</button>
+      </div>
+      <div class="inner">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operator">+</button>
+      </div>
+      <div class="inner">
+        <button>00</button>
+        <button>0</button>
+        <button class="operator">%</button>
+        <button class="operator">=</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  justify-content: center;
+  margin-top: 200px;
+  display: flex
+}
+
+.main-container ul {
+  padding: 20px;
+}
+
+.main-container ul li {
+
+  float: left;
+  color: white;
+  list-style: none;
+  margin-right: 5px;
+}
+
+.timer ul li {
+  font-size: 50px;
+
+}
+
+.timer,
+.timer-identifier {
+  margin-left: 15px;
+}
+
+.main-container {
+  background-color: gray;
+  height: max-content;
+  width: max-content;
+  border-radius: 20px;
+  box-shadow: 3px 3px 40px rgb(118, 118, 109);
+}
+
+.timer-identifier ul li {
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
